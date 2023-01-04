@@ -1,4 +1,10 @@
-for (let i = 0; i < 100; i++) {
-  const element = array[i];
-  console.log(element);
-}
+const progress = document.getElementById("progress");
+const percentage = document.getElementById("percentage");
+
+setInterval(() => {
+  if (progress.value >= 100) {
+    return;
+  }
+  progress.value += 1;
+  percentage.textContent = progress.value;
+}, 1000);
