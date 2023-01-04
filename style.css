@@ -5,26 +5,3 @@
 
 
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-.display-none{
-    display: none;
-}
-
-div{
-    background-image: url('/images//image/car-1.jpg');
-    background-repeat: no-repeat;
-    background-color: blue;
-    background-size: cover;
-    background-blend-mode: multiply;
-}
