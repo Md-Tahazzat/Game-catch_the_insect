@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const progress = document.getElementById("progress");
 const percentage = document.getElementById("percentage");
 
@@ -8,3 +9,6 @@ setInterval(() => {
   progress.value += 1;
   percentage.textContent = progress.value;
 }, 1000);
+=======
+// nothing here.
+>>>>>>> tik-1
