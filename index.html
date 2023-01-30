@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Meal Generator</title>
+    <title>Mood Calender</title>
     <link rel="stylesheet" href="style.css" />
 
     <!-- tailwind play CDN -->
@@ -17,74 +17,7 @@
     ></script>
   </head>
   <body>
-    <div class="container w-full max-w-6xl px-4 md:mx-auto mt-8 md:mt-16">
-      <h1
-        class="text-center text-slate-700 text-2xl md:text-4xl font-bold my-3"
-      >
-        Feeling hungry?
-      </h1>
-      <h2 class="text-center text-xl text-slate-700 md:text-2xl font-bold my-4">
-        Get a random meal by clicking below
-      </h2>
-      <button
-        onclick="generateRandomMeal()"
-        class="mx-auto flex items-center py-2 hover:bg-blue-700 px-4 rounded-md bg-blue-600 text-white mt-5 font-bold"
-      >
-        GET MEAL <i class="fa-solid fa-bowl-food fa-2x ml-3"></i>
-      </button>
-
-      <!--random meal container-->
-      <div id="meal-container"></div>
-
-      <button
-        id="toggle-btn"
-        onclick="toggleContact()"
-        class="py-3 px-4 custom-shadow outline-none flex text-3xl items-center text-white font-bold rounded-full bg-[#FF6A00] hover:bg-[#e35f00] hover:outline-none fixed bottom-64 md:bottom-[30%] right-4 md:right-10"
-      >
-        <span class="hidden md:inline text-xl">GET IN TOUCH</span>
-        <i class="fa-regular fa-comment md:ml-3"></i>
-      </button>
-      <div
-        id="contact-container"
-        class="border-4 md:border-[6px] rounded-3xl fixed bottom-[21rem] md:bottom-[40%] right-4 md:right-10 md:-right-3/4 duration-700 container-shadow bg-[#b2b2b268] inline-block border-blue-700 -right-96"
-      >
-        <h1
-          class="text-center text-sm bg-blue-700 px-5 text-white mx-auto pb-1 max-w-fit rounded-b-xl"
-        >
-          Created with <i class="fa-solid fa-heart"></i> by
-          <span class="text-white">Md Tahazzat</span>
-        </h1>
-        <div class="py-5 px-6 md:py-8 md:px-20">
-          <h1
-            class="text-2xl md:text-3xl text-center font-bold text-black md:text-slate-800"
-          >
-            Get in touch on
-          </h1>
-          <div class="flex gap-6 md:gap-10 items-center justify-between mt-4">
-            <button
-              class="rounded-full border-2 border-slate-300 hover:text-[#FF6A00] w-12 h-12 flex items-center justify-center p-2 text-3xl hover:border-slate-400 duration-200"
-            >
-              <i class="fa-brands fa-facebook"></i>
-            </button>
-            <button
-              class="rounded-full border-2 border-slate-300 hover:text-[#FF6A00] w-12 h-12 flex items-center justify-center p-2 text-3xl hover:border-slate-400 duration-200"
-            >
-              <i class="fa-brands fa-twitter"></i>
-            </button>
-            <button
-              class="rounded-full border-2 border-slate-300 hover:text-[#FF6A00] w-12 h-12 flex items-center justify-center p-2 text-3xl hover:border-slate-400 duration-200"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </button>
-            <button
-              class="rounded-full border-2 border-slate-300 hover:text-[#FF6A00] w-12 h-12 flex items-center justify-center p-2 text-3xl hover:border-slate-400 duration-200"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1>Mood Calender</h1>
   </body>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="script.js"></script>
