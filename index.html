@@ -95,12 +95,36 @@
       </div>
 
       <!-- game container -->
-      <div id="game_container" class="h-screen w-full hidden">
+      <div id="game_container" class="h-screen w-full hidden p-4 md:p-12">
         <div class="flex items-center justify-between">
-          <h2 class="text-2xl ml-4 md:ml-8 mt-4 text-slate-100">time:</h2>
-          <h2 class="text-2xl mr-4 md:mr-8 mt-4 text-slate-100">Score:</h2>
+          <h2 class="text-4xl ml-4 md:ml-8 mt-4 text-slate-100">
+            Time: <span id="time">03:00</span>
+          </h2>
+          <h2 class="text-4xl mr-4 md:mr-8 mt-4 text-slate-100">
+            Score: <span id="score">00</span>
+          </h2>
         </div>
-        <div id="game_field" class="mt-20 relative"></div>
+        <div
+          id="game_field"
+          class="mt-20 relative flex justify-center items-center"
+        ></div>
+      </div>
+      <div
+        id="end_score_container"
+        class="h-screen w-full flex items-center justify-center hidden"
+      >
+        <div class="text-center">
+          <h1 class="text-7xl mb-5 md:text-9xl text-slate-300">
+            Score:<span id="end_score"></span>
+          </h1>
+          <button
+            onclick="restartGame()"
+            id="restart_btn"
+            class="bg-slate-100 rounded-lg py-2 px-4 font-bold text-xl text-slate-800"
+          >
+            Restart
+          </button>
+        </div>
       </div>
     </div>
   </body>
