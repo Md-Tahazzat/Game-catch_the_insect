@@ -17,37 +17,91 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <div class="year_container">
-        <h2>mood calendar of</h2>
+    <div class="bg-blue-400">
+      <div
+        id="header_container"
+        class="text-center h-screen flex items-center justify-center"
+      >
+        <div>
+          <h1
+            class="text-center text-3xl md:text-7xl font-bold text-slate-100 my-5"
+          >
+            Catch The Insect
+          </h1>
+          <a
+            id="play_game"
+            onclick="showContainer()"
+            href="#select"
+            class="text-center inline-block mx-auto text-slate-700 text-3xl rounded py-2 px-3 bg-slate-100 font-bold"
+            >Play Game</a
+          >
+        </div>
       </div>
-      <h4>~ color each day depending on what your mood was / is ~</h4>
-      <p>Select mood:</p>
-      <div class="moods_container">
-        <button class="mood mood_1" id="mood_1">
-          <i class="far fa-laugh"></i>
-        </button>
-        <button class="mood mood_2" id="mood_2">
-          <i class="far fa-smile"></i>
-        </button>
-        <button class="mood mood_3" id="mood_3">
-          <i class="far fa-meh"></i>
-        </button>
-        <button class="mood mood_4" id="mood_4">
-          <i class="far fa-frown"></i>
-        </button>
-        <button class="mood mood_5" id="mood_5">
-          <i class="far fa-sad-tear"></i>
-        </button>
+
+      <!-- insect selection section -->
+      <div
+        id="select"
+        class="h-screen flex items-center justify-center p-10 hidden"
+      >
+        <div>
+          <h2
+            class="text-center text-3xl md:text-7xl font-bold text-slate-100 my-5"
+          >
+            What is your "favorite" insect?
+          </h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 place-items-center mt-10">
+            <div
+              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 hover:text-slate-700 border-slate-200 border-2 mx-5"
+            >
+              <h1 class="text-slate-200">BumbleBee</h1>
+              <img
+                class="w-full h-full"
+                src="./images/image/insect.png"
+                alt="bee"
+              />
+            </div>
+            <div
+              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 hover:text-slate-700 border-slate-200 border-2 mx-5"
+            >
+              <h1 class="text-slate-200">BumbleBee</h1>
+              <img
+                class="w-full h-full"
+                src="./images/image/insect.png"
+                alt="bee"
+              />
+            </div>
+            <div
+              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 hover:text-slate-700 border-slate-200 border-2 mx-5"
+            >
+              <h1 class="text-slate-200">BumbleBee</h1>
+              <img
+                class="w-full h-full"
+                src="./images/image/insect.png"
+                alt="bee"
+              />
+            </div>
+            <div
+              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 hover:text-slate-700 border-slate-200 border-2 mx-5"
+            >
+              <h1 class="text-slate-200">BumbleBee</h1>
+              <img
+                class="w-full h-full"
+                src="./images/image/insect.png"
+                alt="bee"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <p>then click on the circles below</p>
-      <button id="randomize" class="action_btn randomize">
-        <i class="fas fa-random"></i>
-      </button>
-      <button id="clear" class="action_btn clear">
-        <i class="fas fa-sync"></i>
-      </button>
-      <div id="calendar" class="calendar"></div>
+
+      <!-- game container -->
+      <div id="game_container" class="h-screen w-full hidden">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl ml-4 md:ml-8 mt-4 text-slate-100">time:</h2>
+          <h2 class="text-2xl mr-4 md:mr-8 mt-4 text-slate-100">Score:</h2>
+        </div>
+        <div id="game_field" class="mt-20 relative"></div>
+      </div>
     </div>
   </body>
   <script src="https://cdn.tailwindcss.com"></script>
