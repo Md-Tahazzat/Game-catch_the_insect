@@ -24,12 +24,12 @@ insects.forEach((insect) =>
   insect.addEventListener("click", (e) => {
     gameContainer.classList.remove("hidden");
     selectContainer.classList.add("hidden");
-    createInsect();
+    createInsect(e.srcElement.alt);
     startTime();
   })
 );
 
-function createInsect() {
+function createInsect(insect) {
   const deg = randomDeg();
   const id = randomID();
   const img = document.createElement("img");
@@ -39,7 +39,7 @@ function createInsect() {
   img.style.transform = `rotate(${deg})`;
   img.setAttribute("id", id);
   img.setAttribute("onclick", `display(${id})`);
-  img.src = "./images/image/insect.png";
+  img.src = `./images/image/${insect}`;
 
   gameField.appendChild(img);
 }
@@ -61,8 +61,10 @@ function randomDeg() {
 
 // hide selected insect and make double insect
 function display(e) {
+  const imageLink = e.src;
+  const img = imageLink.split("image/")[1];
   for (let i = 0; i < 2; i++) {
-    createInsect();
+    createInsect(img);
   }
   if (totalScore === 30) {
     contactInfo();

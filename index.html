@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mood Calender</title>
+    <title>Catch Insect</title>
     <link rel="stylesheet" href="style.css" />
 
     <!-- tailwind play CDN -->
@@ -51,43 +51,55 @@
           </h2>
           <div class="grid grid-cols-2 md:grid-cols-4 place-items-center mt-10">
             <div
-              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 hover:text-slate-700 border-slate-200 border-2 mx-5"
+              insect="ant.png"
+              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 rounded-lg h-60 w-40 hover:text-slate-700 border-slate-200 border-2 mx-5"
             >
-              <h1 class="text-slate-200">BumbleBee</h1>
+              <h1 class="text-blue-600 text-xl text-center font-extrabold">
+                ant
+              </h1>
               <img
                 class="w-full h-full"
-                src="./images/image/insect.png"
-                alt="bee"
+                src="./images/image/ant.png"
+                alt="ant.png"
               />
             </div>
             <div
-              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 hover:text-slate-700 border-slate-200 border-2 mx-5"
+              insect="bee.png"
+              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 rounded-lg h-60 w-40 hover:text-slate-700 border-slate-200 border-2 mx-5"
             >
-              <h1 class="text-slate-200">BumbleBee</h1>
+              <h1 class="text-blue-600 text-xl text-center font-extrabold">
+                Bee
+              </h1>
               <img
                 class="w-full h-full"
-                src="./images/image/insect.png"
-                alt="bee"
+                src="./images/image/bee.png"
+                alt="bee.png"
               />
             </div>
             <div
-              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 hover:text-slate-700 border-slate-200 border-2 mx-5"
+              insect="spider.png"
+              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 rounded-lg h-60 w-40 hover:text-slate-700 border-slate-200 border-2 mx-5"
             >
-              <h1 class="text-slate-200">BumbleBee</h1>
+              <h1 class="text-blue-600 text-xl text-center font-extrabold">
+                Spider
+              </h1>
               <img
                 class="w-full h-full"
-                src="./images/image/insect.png"
-                alt="bee"
+                src="./images/image/spider.png"
+                alt="spider.png"
               />
             </div>
             <div
-              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 hover:text-slate-700 border-slate-200 border-2 mx-5"
+              insect="mosquito.png"
+              class="insects p-5 mt-10 flex flex-col hover:bg-slate-200 rounded-lg h-60 w-40 hover:text-slate-700 border-slate-200 border-2 mx-5"
             >
-              <h1 class="text-slate-200">BumbleBee</h1>
+              <h1 class="text-blue-600 text-xl text-center font-extrabold">
+                Mosquito
+              </h1>
               <img
                 class="w-full h-full"
-                src="./images/image/insect.png"
-                alt="bee"
+                src="./images/image/mosquito.png"
+                alt="mosquito.png"
               />
             </div>
           </div>
@@ -97,10 +109,10 @@
       <!-- game container -->
       <div id="game_container" class="h-screen w-full hidden p-4 md:p-12">
         <div class="flex items-center justify-between">
-          <h2 class="text-4xl ml-4 md:ml-8 mt-4 text-slate-100">
+          <h2 class="text-xl md:text-4xl ml-4 md:ml-8 mt-4 text-slate-100">
             Time: <span id="time">03:00</span>
           </h2>
-          <h2 class="text-4xl mr-4 md:mr-8 mt-4 text-slate-100">
+          <h2 class="text-xl md:text-4xl mr-4 md:mr-8 mt-4 text-slate-100">
             Score: <span id="score">00</span>
           </h2>
         </div>
@@ -114,7 +126,7 @@
         class="h-screen w-full flex items-center justify-center hidden"
       >
         <div class="text-center">
-          <h1 class="text-7xl mb-5 md:text-9xl text-slate-300">
+          <h1 class="text-5xl mb-5 md:text-9xl text-slate-300">
             Score:<span id="end_score"></span>
           </h1>
           <button

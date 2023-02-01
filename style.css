@@ -27,3 +27,10 @@ body {
   transition: 0.5s;
   display: none !important;
 }
+
+@media only screen and (max-width: 576px) {
+  .insect {
+    width: 60px;
+    height: 60px;
+  }
+}
